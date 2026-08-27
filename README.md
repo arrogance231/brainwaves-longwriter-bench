@@ -22,7 +22,8 @@ image is `vllm-rocm:0.28.0-gfx942` (vLLM 0.28.0, PyTorch 2.12 ROCm 7.2.3,
 Transformers 5.16.1).
 
 The first measured result is deliberately conservative: native 262K loads and
-completes a 232K-token fiction fixture, but with 259–290 s TTFT. The 512K
+completes a 232K-token fiction fixture in 259–290 s end-to-end (the non-stream
+probe cannot expose a true first-token timestamp). The 512K
 YaRN×2 and 1.01M YaRN×4 servers load but produced no first token in bounded
 single-request pilots (~9 minutes and ~5 minutes respectively). They are not
 advertised as usable context. See [`reports/FINAL_REPORT.md`](reports/FINAL_REPORT.md)

@@ -36,7 +36,7 @@ architecture. The config, not the display name, is the source of truth.
 
 | Context/profile | Loads | Retrieval/continuity | Narrative quality | Stability | Classification |
 |---|---|---|---|---|---|
-| 262K native, BF16 KV | Yes | 3/3 long-prompt machine checks passed; 1.000 continuity on the 232K-token fixture | Subjective review pending; no n-gram repetition or leakage in pilot | Completed 3 non-stream requests, 259–290 s each | **USABLE** for offline/rare long audits; too slow for default interactive work |
+| 262K native, BF16 KV | Yes | 3/3 long-prompt machine checks passed; 1.000 continuity on the 232K-token fixture | Subjective review pending; no n-gram repetition or leakage in pilot | Completed 3 non-stream requests, 259–290 s end-to-end each | **USABLE** for offline/rare long audits; too slow for default interactive work |
 | 512K YaRN×2, BF16 KV | Yes | No completion; no score | Not measurable | No first token in ~540 s; VRAM ~182.0 GB; GPU 100% | **EXPERIMENTAL / FAILED pilot** |
 | 1.01M YaRN×4, BF16 KV | Yes | No completion; no score | Not measurable | No first token in ~300 s; VRAM ~184.0 GB; GPU 100% | **EXPERIMENTAL / FAILED pilot** |
 
@@ -117,7 +117,8 @@ token.
 * **Best default context:** 32K–64K native BF16, where interactive decode is
   8–35 tok/s and prefix reuse is practical.
 * **Best maximum reliable context:** native 262K for offline/rare continuity
-  audits, with very high TTFT; do not use it as the everyday profile.
+  audits, with very high end-to-end latency; do not use it as the everyday
+  profile.
 * **Experimental maximum:** 1.01M YaRN×4 (launchable only; failed bounded
   first-token pilot).
 * **Recommended KV dtype:** BF16 for the reference; FP8 E4M3 as an opt-in
