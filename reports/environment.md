@@ -14,6 +14,9 @@ Python 3.14.4
 
 ```text
 {"card0": {"VRAM Total Memory (B)": "205822885888", "VRAM Total Used Memory (B)": "182666743808", "Card Series": "N/A", "Card Model": "0x74b5", "Card Vendor": "Advanced Micro Devices, Inc. [AMD/ATI]", "Card SKU": "M3000100", "Subsystem ID": "0x74a1", "Device Rev": "0x00", "Node ID": "1", "GUID": "21947", "GFX Version": "gfx942"}, "system": {"Driver version": "7.0.0-27-generic"}}
+
+The MI300X is presented as a virtual function; a separate firmware revision was
+not exposed by `rocm-smi`/`rocminfo` in this environment.
 ```
 
 ## Memory / NUMA / storage
