@@ -1,0 +1,39 @@
+title: Arro LongWriter synthetic AU
+copyright_note: "Original benchmark prose; no source passages are redistributed."
+setting:
+  academy: Seishun Academy
+  premise: "Third-year Marriage Practical students share monitored common spaces, receive monthly scores, and may request partner swaps."
+  rules:
+    - "Students are evaluated on cooperation, household work, conflict repair, and mutual trust."
+    - "The school records scores but does not reveal private conversations."
+    - "Partner changes require a joint petition and are never automatic."
+characters:
+  Arro:
+    role: "assigned to Akari; narrator-facing protagonist"
+    voice: "earnest, overcommitted, literal when anxious, increasingly self-aware"
+    goal: "help Minami find sincere happiness without treating anyone as a project"
+  Akari Watanabe:
+    role: "Arro's assigned partner"
+    voice: "quick, proud, warm beneath defensive sarcasm"
+    goal: "choose her own relationships and be valued for more than a score"
+  Shiori Sakurazaka:
+    role: "Arro's childhood friend and original crush"
+    voice: "soft-spoken, observant, precise when hurt"
+    goal: "speak honestly instead of relying on shared history"
+  Minami Tenjin:
+    role: "Arro's extremely handsome male best friend"
+    voice: "confident in public, dryly funny, direct when a boundary is crossed"
+    goal: "be treated as a friend with agency, not Arro's romantic assignment"
+  Sachi Takamiya:
+    role: "friend who notices social patterns"
+    voice: "fast, teasing, strategically kind"
+    goal: "keep the group from confusing a joke with a promise"
+  Natsumi Ōhashi:
+    role: "classmate and practical rival"
+    voice: "blunt, energetic, competitive without malice"
+    goal: "win on her own terms and expose unfair assumptions"
+premise_constraints:
+  - "Arro sincerely prioritizes Minami but must learn to ask what Minami wants."
+  - "No character is omniscient; private knowledge stays private until learned."
+  - "Romance is slow-burn: no unearned confession, harem, or instant intimacy."
+  - "Minami has goals, conflicts, humor, and the right to reject Arro's plans."

@@ -1,0 +1,4 @@
+# Host-side benchmark/evaluation dependencies. The serving image is pinned
+# separately in configs/runtimes/vllm.yaml.
+PyYAML==6.0.2
+requests==2.32.5

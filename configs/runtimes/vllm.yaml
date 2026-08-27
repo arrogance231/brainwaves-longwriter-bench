@@ -1,0 +1,5 @@
+runtime: vllm
+image: vllm-rocm:0.28.0-gfx942
+rocm_userspace: 7.2.3
+vllm_version: 0.28.0
+aiter_env: VLLM_ROCM_USE_AITER

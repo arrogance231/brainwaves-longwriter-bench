@@ -1,0 +1,46 @@
+{
+  "runtime": {
+    "base_url": "http://127.0.0.1:8000",
+    "model": "brainwaves-qwen38-27b"
+  },
+  "rows": [
+    {
+      "ok": true,
+      "prompt_tokens": 7277,
+      "completion_tokens": 128,
+      "elapsed_s": 6.684959906000586,
+      "ttft_s": 3.04161275700244,
+      "decode_tok_s": 35.132529173125235,
+      "prefill_tok_s": 2392.4807598359776,
+      "usage": {
+        "prompt_tokens": 7277,
+        "total_tokens": 7405,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "context_target_tokens": 8192,
+      "request": 0
+    },
+    {
+      "ok": true,
+      "prompt_tokens": 28947,
+      "completion_tokens": 128,
+      "elapsed_s": 14.355372748999798,
+      "ttft_s": 5.39821994399972,
+      "decode_tok_s": 14.29025526153217,
+      "prefill_tok_s": 5362.323191772769,
+      "usage": {
+        "prompt_tokens": 28947,
+        "total_tokens": 29075,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "context_target_tokens": 32768,
+      "request": 0
+    }
+  ]
+}

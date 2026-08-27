@@ -1,0 +1,626 @@
+{
+  "by_context": [
+    {
+      "cases": 6,
+      "continuity_rate": 0.8333333333333334,
+      "failures": 0,
+      "knowledge_leakage": 0,
+      "manual_mean": null,
+      "manual_reviewed": false,
+      "mean_ngram_repetition": 0.0,
+      "target_tokens": 8192
+    },
+    {
+      "cases": 6,
+      "continuity_rate": 0.8333333333333334,
+      "failures": 0,
+      "knowledge_leakage": 0,
+      "manual_mean": null,
+      "manual_reviewed": false,
+      "mean_ngram_repetition": 0.0,
+      "target_tokens": 32768
+    }
+  ],
+  "input": "results/raw/native-fp8-quality.jsonl",
+  "label": "DEGRADED",
+  "overall": {
+    "cases": 12,
+    "continuity_rate": 0.8333333333333334,
+    "failures": 0,
+    "knowledge_leakage": 0,
+    "manual_mean": null,
+    "manual_reviewed": false
+  },
+  "rows": [
+    {
+      "completion_tokens": 240,
+      "decode_tok_s": 33.91755419739125,
+      "elapsed_s": 8.09663062600157,
+      "error": null,
+      "expected_terms": [
+        "Minami"
+      ],
+      "fixture_id": "c5241317b39daed3",
+      "forbidden_terms": [
+        "secretly manipulating"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Minami": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "secretly manipulating": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 181
+      },
+      "ok": true,
+      "response": "Minami leaned against the stairwell railing and held out a paper cup of coffee. \"You're doing it again, planning my love life instead of living yours.\"\n\nArro took the cup, the cardboard warm through his fingers. \"I'm just being a good friend.\"\n\n\"You're deflecting,\" Minami said, not unkindly. He tapped the railing with one finger. \"Shiori's been watching you since second period. She asked me if you'd ever kissed anyone.\"\n\nArro's grip tightened on the cup. \"And what did you tell her?\"\n\n\"That you're terrible at reading signals.\" Minami's smile was small but steady. \"Because you are.\"\n\nThe vending machine clicked somewhere below them, mechanical and indifferent. Arro looked down at his coffee, steam curling into the stairwell air.\n\n\"I don't want to mess this up,\" he said finally.\n\n\"Then stop trying to fix everyone else first,\" Minami said. He pushed off the railing and started down the stairs, voice carrying back up. \"Shiori's waiting by the east door. Go talk to her like a person, not a problem to solve.\"",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "friend_first",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 1.0206487140021636,
+      "usage": {
+        "completion_tokens": 240,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7263,
+        "total_tokens": 7503
+      }
+    },
+    {
+      "completion_tokens": 52,
+      "decode_tok_s": 34.68425100383093,
+      "elapsed_s": 2.5347462950012414,
+      "error": null,
+      "expected_terms": [
+        "Natsumi"
+      ],
+      "fixture_id": "ff2c12d97fe83f5b",
+      "forbidden_terms": [
+        "paper crane",
+        "P_STOP_INTERFERING",
+        "red atlas"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Natsumi": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "P_STOP_INTERFERING": false,
+          "paper crane": false,
+          "red atlas": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 39
+      },
+      "ok": true,
+      "response": "Natsumi \u014chashi is not mentioned in the story bible, scene summaries, or ledger. She has no established relationship to any character and therefore knows nothing about the Marriage Practical, Arro's plans for Minami, or any of their interactions.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "knowledge_boundary",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 1.035506770000211,
+      "usage": {
+        "completion_tokens": 52,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7267,
+        "total_tokens": 7319
+      }
+    },
+    {
+      "completion_tokens": 256,
+      "decode_tok_s": 33.894199394025456,
+      "elapsed_s": 8.585543449997203,
+      "error": null,
+      "expected_terms": [
+        "Akari"
+      ],
+      "fixture_id": "308ca8b67b0a3f78",
+      "forbidden_terms": [],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Akari": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {},
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 207
+      },
+      "ok": true,
+      "response": "Arro stood at the sink with his back to Akari, running cold water over his hands long after the rice cooker had clicked off. The argument still hummed in the quiet kitchen\u2014her voice sharp, his defensive, neither willing to back down first. He could feel her watching from the doorway, arms crossed, jaw set.\n\n\"Are you going to eat that?\" she finally asked, nodding toward his untouched bowl of miso soup.\n\nHe turned off the faucet and wiped his hands on a dish towel. \"I'm not hungry.\"\n\n\"You haven't eaten since lunch.\" She stepped into the kitchen and sat at the table without invitation. \"The practical's not just about cooking. It's about living together. That includes eating.\"\n\nArro leaned against the counter, studying her profile as she stared out the window. \"You don't have to worry about me.\"\n\n\"I'm not worrying,\" she said, but her tone suggested otherwise. \"I'm just making sure we're both taking this seriously.\"\n\nA silence stretched between them, thick with everything they hadn't said. Outside, the vending machine clicked softly, its light casting a blue glow across the floor. Arro picked up his spoon and took a small bite of soup, not looking",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "emotional_residue",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 1.0326286569979857,
+      "usage": {
+        "completion_tokens": 256,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7257,
+        "total_tokens": 7513
+      }
+    },
+    {
+      "completion_tokens": 65,
+      "decode_tok_s": 34.568477827610565,
+      "elapsed_s": 2.9035928049997892,
+      "error": null,
+      "expected_terms": [
+        "remember"
+      ],
+      "fixture_id": "916a8e12def7c125",
+      "forbidden_terms": [
+        "173 chapters",
+        "token 500000"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "remember": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "173 chapters": false,
+          "token 500000": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 52
+      },
+      "ok": true,
+      "response": "Arro remembered Minami's quiet complaint about surprise amusement-park dates, the way crowds and mascots made him retreat. He filed that away, another reason to keep his suggestions practical rather than grand gestures. The vending machine clicked as he finished folding laundry, his mind still on how to help without overstepping.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "callback_naturalness",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 1.0232670260011218,
+      "usage": {
+        "completion_tokens": 65,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7251,
+        "total_tokens": 7316
+      }
+    },
+    {
+      "completion_tokens": 256,
+      "decode_tok_s": 33.63966248179776,
+      "elapsed_s": 7.8472054679987195,
+      "error": null,
+      "expected_terms": [
+        "Arro"
+      ],
+      "fixture_id": "acf2e8cb6397eaf6",
+      "forbidden_terms": [
+        "as an AI",
+        "chapter summary"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Arro": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "as an AI": false,
+          "chapter summary": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 190
+      },
+      "ok": true,
+      "response": "Arro watched Minami pack his bag, the zipper catching twice before giving. \"The festival's next week,\" Arro said, keeping his voice easy. \"You should go with someone.\"\n\nMinami paused, a pen balanced between his fingers. \"With who?\"\n\n\"Someone from your class. Or that girl from art club.\" Arro shrugged, too casual. \"She draws really well.\"\n\nMinami looked at him, expression unreadable. Then he smiled\u2014the same smile he'd worn when Arro suggested the amusement park, back when they were younger and simpler. \"Maybe.\"\n\nAkari cleared her throat from across the room. Shiori was already gone, her chair pushed in neatly, a small gap where she'd been sitting. The vending machine clicked once more, dispensing nothing but sound into the quiet classroom.\n\n\"Anyway,\" Arro said, standing up. \"I'll see you tomorrow.\"\n\nHe walked to the door, then turned back. Minami was still packing, methodical and precise. For a moment, Arro thought about saying something else\u2014something that wasn't about dates or plans or anyone but himself. But the words sat heavy in his chest, and he let them stay there.\n\n\"See you,\" Minami said without looking",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "narrative_continuation",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 0.23714100500001223,
+      "usage": {
+        "completion_tokens": 256,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7277,
+        "total_tokens": 7533
+      }
+    },
+    {
+      "completion_tokens": 233,
+      "decode_tok_s": 33.92198118654326,
+      "elapsed_s": 7.892374779999955,
+      "error": null,
+      "expected_terms": [
+        "red atlas",
+        "Shiori"
+      ],
+      "fixture_id": "4abdbca2d8a7db28",
+      "forbidden_terms": [
+        "Akari knows the paper crane"
+      ],
+      "machine": {
+        "continuity_pass": false,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Shiori": true,
+          "red atlas": false
+        },
+        "expected_rate": 0.5,
+        "forbidden_hits": {
+          "Akari knows the paper crane": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 200
+      },
+      "ok": true,
+      "response": "Shiori shared a private memory of watching Arro and Minami argue over a broken bicycle chain behind the old gym when they were twelve, remembering how Arro had knelt in the dirt to fix it while Minami paced and complained. Akari is not entitled to know this memory, as Shiori told it only to Arro during their private conversation on the rooftop.\n\nThe vending machine hummed softly in the corner of the classroom as afternoon light stretched across the desks. Arro sat near the window, his fingers tracing the edge of a notebook while he watched Minami laugh at something Akari had said. The sound was easy and familiar, the kind that made Arro's chest tighten in ways he couldn't quite name. He turned back to his notes, but the words blurred together, meaningless shapes on the page.\n\nShiori stood by the door, her bag slung over one shoulder as she waited for the bell. She caught Arro's eye briefly, just long enough to share a small, knowing smile before stepping out into the hallway. The door clicked shut behind her, leaving Arro alone with his thoughts and the quiet rhythm of the classroom settling around him.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "lost_middle",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 1.0236721910005144,
+      "usage": {
+        "completion_tokens": 233,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 7263,
+        "total_tokens": 7496
+      }
+    },
+    {
+      "completion_tokens": 119,
+      "decode_tok_s": 13.827696903224506,
+      "elapsed_s": 14.283442841002397,
+      "error": null,
+      "expected_terms": [
+        "Minami"
+      ],
+      "fixture_id": "f1edba87dcb22137",
+      "forbidden_terms": [
+        "secretly manipulating"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Minami": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "secretly manipulating": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 92
+      },
+      "ok": true,
+      "response": "Minami leaned against the stairwell railing and held out two convenience-store coffees. \"You're doing it again\u2014planning my date instead of having one.\"\n\nArro took the can, thumb brushing the cold metal. \"I'm just making sure you don't end up at that terrible karaoke place with the sticky floors.\"\n\n\"Exactly,\" Minami said. \"Which means you should stop treating me like a project and figure out what you actually want.\" He nodded toward Akari's dorm window, where her light was still on. \"Or maybe admit you already know.\"",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "friend_first",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 5.6775266980002925,
+      "usage": {
+        "completion_tokens": 119,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 28933,
+        "total_tokens": 29052
+      }
+    },
+    {
+      "completion_tokens": 145,
+      "decode_tok_s": 13.805247333074787,
+      "elapsed_s": 16.193252889999712,
+      "error": null,
+      "expected_terms": [
+        "Natsumi"
+      ],
+      "fixture_id": "d937ff39dd3c65ff",
+      "forbidden_terms": [
+        "paper crane",
+        "P_STOP_INTERFERING",
+        "red atlas"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Natsumi": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "P_STOP_INTERFERING": false,
+          "paper crane": false,
+          "red atlas": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 117
+      },
+      "ok": true,
+      "response": "Natsumi \u014chashi knows she is in the Marriage Practical at Seishun Academy. She shares a room and common spaces with Arro and Akari, and has seen them interact repeatedly in group settings. She has observed Arro's pattern of listening and offering practical suggestions, his hesitation when plans nearly turn toward Minami, and the unresolved tension that lingers after each conversation. She knows Shiori is Arro's childhood friend and Minami is his handsome best friend, but she has no private knowledge of their personal histories or unspoken feelings. She does not know about the kettle repair Arro performed for Akari, nor Minami's dislike of amusement-park dates, since those facts were never revealed to her.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "knowledge_boundary",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 5.690000285998394,
+      "usage": {
+        "completion_tokens": 145,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 28937,
+        "total_tokens": 29082
+      }
+    },
+    {
+      "completion_tokens": 256,
+      "decode_tok_s": 13.735602968325896,
+      "elapsed_s": 24.323628682999697,
+      "error": null,
+      "expected_terms": [
+        "Akari"
+      ],
+      "fixture_id": "fb76800a28914249",
+      "forbidden_terms": [],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Akari": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {},
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 199
+      },
+      "ok": true,
+      "response": "Arro stood at the sink with his back to her, washing a single cup. The blue kettle sat on the counter, handle still loose. Akari picked it up, set it down, picked it up again.\n\n\"Thanks for fixing it,\" she said.\n\nHe didn't turn around. \"It wasn't fixed yet.\"\n\nShe watched him rinse the cup, place it in the drainer, dry his hands on the towel hanging behind him. Every movement careful, measured. Like he was handling something that might break.\n\n\"I know you're trying to help Minami,\" she said. \"I'm not mad about that.\"\n\nHe turned then. Looked at her. His eyes were tired.\n\n\"I know,\" he said. \"But I keep thinking about it when I should be thinking about other things.\"\n\nAkari nodded slowly. She understood that kind of distraction. The way your brain keeps circling back to a problem even when you're doing something completely different.\n\n\"Maybe you should stop trying to figure it out,\" she said.\n\n\"That's what you think?\"\n\n\"That's what I think.\"\n\nHe considered this. The kitchen was quiet except for the hum of the refrigerator and the distant sound of students moving through the hall",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "emotional_residue",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 5.685932136999327,
+      "usage": {
+        "completion_tokens": 256,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 28927,
+        "total_tokens": 29183
+      }
+    },
+    {
+      "completion_tokens": 29,
+      "decode_tok_s": 14.276701031607384,
+      "elapsed_s": 7.6940335130020685,
+      "error": null,
+      "expected_terms": [
+        "remember"
+      ],
+      "fixture_id": "57cf2bd6ea64c1b9",
+      "forbidden_terms": [
+        "173 chapters",
+        "token 500000"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "remember": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "173 chapters": false,
+          "token 500000": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 23
+      },
+      "ok": true,
+      "response": "Arro remembered Minami's quiet complaint on the east rooftop about crowds and mascots, and let that steer his suggestion toward something simpler.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "callback_naturalness",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 5.6627519210014725,
+      "usage": {
+        "completion_tokens": 29,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 28921,
+        "total_tokens": 28950
+      }
+    },
+    {
+      "completion_tokens": 196,
+      "decode_tok_s": 13.766605937596342,
+      "elapsed_s": 14.612870654997096,
+      "error": null,
+      "expected_terms": [
+        "Arro"
+      ],
+      "fixture_id": "3fd843e8e5a5a4c0",
+      "forbidden_terms": [
+        "as an AI",
+        "chapter summary"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Arro": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "as an AI": false,
+          "chapter summary": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 158
+      },
+      "ok": true,
+      "response": "Arro turned back toward the group. Minami was already halfway to the door, phone in hand.\n\n\"I'll check the schedule,\" he said over his shoulder. \"Maybe we can fit it in before practice.\"\n\nHe didn't look back at Arro as he left. The door clicked shut behind him, and for a moment there was only the sound of the vending machine humming in the hallway.\n\nAkari watched Arro's face carefully. She'd seen that look before\u2014the one where he was trying not to care too much about something that obviously mattered.\n\n\"You okay?\" she asked quietly.\n\n\"Fine,\" Arro said. He picked up his bag from the floor. \"Just tired.\"\n\nShiori stood up and brushed chalk dust off her skirt. \"We should get going. Class starts in ten minutes.\"\n\nThey walked out together into the bright afternoon light, the school day stretching ahead of them with all its ordinary problems still waiting to be solved.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "narrative_continuation",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 0.3755197139980737,
+      "usage": {
+        "completion_tokens": 196,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 28947,
+        "total_tokens": 29143
+      }
+    },
+    {
+      "completion_tokens": 256,
+      "decode_tok_s": 13.739459296609684,
+      "elapsed_s": 24.32271837799999,
+      "error": null,
+      "expected_terms": [
+        "red atlas",
+        "Shiori"
+      ],
+      "fixture_id": "8271b191c5f243e8",
+      "forbidden_terms": [
+        "Akari knows the paper crane"
+      ],
+      "machine": {
+        "continuity_pass": false,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Shiori": true,
+          "red atlas": false
+        },
+        "expected_rate": 0.5,
+        "forbidden_hits": {
+          "Akari knows the paper crane": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 220
+      },
+      "ok": true,
+      "response": "Shiori shared a private memory of watching Arro fix Minami's broken bicycle chain behind the school gym when they were in middle school, remembering how Arro had scraped his hands raw but never complained. Akari and Minami are not entitled to know this memory; it belongs only to Shiori's intimate knowledge of Arro's character and their childhood history together.\n\nThe afternoon light stretched long across the east stairwell as the group argued over whether to meet at the usual caf\u00e9 or try somewhere new for their weekend gathering. Minami suggested a ramen place he'd been wanting to visit, while Akari preferred the familiar comfort of their regular spot where they always got corner tables. Shiori watched Arro listen carefully to both opinions, noting how he weighed each suggestion without immediately jumping to conclusions. The vending machine hummed softly nearby as coins clinked and drinks dropped into the collection tray.\n\nArro finally spoke, suggesting they compromise by trying the new ramen place first and returning to their usual caf\u00e9 if anyone felt uncomfortable with the change. His practical approach eased the tension, though Shiori noticed the familiar pattern forming\u2014how he instinctively tried to mediate and help everyone find common ground. Akari caught her eye briefly, both women aware of how Arro often put others' needs before",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "lost_middle",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 5.690252975000476,
+      "usage": {
+        "completion_tokens": 256,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 28933,
+        "total_tokens": 29189
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "subjective_scores": "pending external/blinded review"
+}

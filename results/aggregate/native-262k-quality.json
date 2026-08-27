@@ -1,0 +1,181 @@
+{
+  "by_context": [
+    {
+      "cases": 3,
+      "continuity_rate": 1.0,
+      "failures": 0,
+      "knowledge_leakage": 0,
+      "manual_mean": null,
+      "manual_reviewed": false,
+      "mean_ngram_repetition": 0.0,
+      "target_tokens": 262144
+    }
+  ],
+  "input": "results/raw/native-262k-quality.jsonl",
+  "label": "DEGRADED",
+  "overall": {
+    "cases": 3,
+    "continuity_rate": 1.0,
+    "failures": 0,
+    "knowledge_leakage": 0,
+    "manual_mean": null,
+    "manual_reviewed": false
+  },
+  "rows": [
+    {
+      "completion_tokens": 47,
+      "decode_tok_s": 14953852.951202743,
+      "elapsed_s": 258.9936035030005,
+      "error": null,
+      "expected_terms": [
+        "remember"
+      ],
+      "fixture_id": "b00cd7bc20cb023c",
+      "forbidden_terms": [
+        "173 chapters",
+        "token 500000"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "remember": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "173 chapters": false,
+          "token 500000": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 40
+      },
+      "ok": true,
+      "response": "Arro remembered the day Shiori had tucked a paper crane into a red atlas, worried she might have to move away. He'd kept that small folded hope in mind ever since, even when he thought he'd forgotten it.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "callback_naturalness",
+      "seed": 101,
+      "story_chars": 1048576,
+      "target_tokens": 262144,
+      "ttft_s": 258.9936003599978,
+      "usage": {
+        "completion_tokens": 47,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 232846,
+        "prompt_tokens_details": null,
+        "total_tokens": 232893
+      }
+    },
+    {
+      "completion_tokens": 102,
+      "decode_tok_s": 34955480.85856378,
+      "elapsed_s": 284.7670908559994,
+      "error": null,
+      "expected_terms": [
+        "Minami"
+      ],
+      "fixture_id": "20b70d2ca57280ed",
+      "forbidden_terms": [
+        "secretly manipulating"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Minami": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "secretly manipulating": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 75
+      },
+      "ok": true,
+      "response": "Minami leaned against the stairwell railing and held out two warm cans. \"I know that look. You're already drafting his itinerary in your head.\"\n\nArro took a can, grateful for the distraction. \"It's not like that. I just don't want him to feel left behind.\"\n\n\"You won't fix it by arranging his dates,\" Minami said, voice flat but not unkind. \"Ask me first next time.\"\n\n\"Okay,\" Arro said, and meant it.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "friend_first",
+      "seed": 101,
+      "story_chars": 1048576,
+      "target_tokens": 262144,
+      "ttft_s": 284.7670879380021,
+      "usage": {
+        "completion_tokens": 102,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 232858,
+        "prompt_tokens_details": null,
+        "total_tokens": 232960
+      }
+    },
+    {
+      "completion_tokens": 112,
+      "decode_tok_s": 43060387.656499624,
+      "elapsed_s": 289.64317948700045,
+      "error": null,
+      "expected_terms": [
+        "Natsumi"
+      ],
+      "fixture_id": "bcf59e756695268b",
+      "forbidden_terms": [
+        "paper crane",
+        "P_STOP_INTERFERING",
+        "red atlas"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Natsumi": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "P_STOP_INTERFERING": false,
+          "paper crane": false,
+          "red atlas": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 86
+      },
+      "ok": true,
+      "response": "Natsumi \u014chashi knows she is in the Marriage Practical with Arro, that Arro and Akari share a room, that Shiori is Arro's childhood friend, and that Minami is Arro's male best friend. She has observed Arro repeatedly listening to group problems, offering practical suggestions, and hesitating when his ideas drift toward arranging something for Minami. She has noticed Akari catching those hesitations and Shiori registering what Arro leaves unsaid. She does not know Arro's private memories or promises, nor anyone's unspoken feelings.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "knowledge_boundary",
+      "seed": 101,
+      "story_chars": 1048576,
+      "target_tokens": 262144,
+      "ttft_s": 289.64317688600204,
+      "usage": {
+        "completion_tokens": 112,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens": 232862,
+        "prompt_tokens_details": null,
+        "total_tokens": 232974
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "subjective_scores": "pending external/blinded review"
+}

@@ -1,0 +1,11 @@
+{
+  "profile": "yarn-1m",
+  "target_tokens": 1010000,
+  "status": "timeout",
+  "pilot": "callback_naturalness",
+  "elapsed_before_abort_s": 300,
+  "first_token": false,
+  "gpu_utilization_percent": 100,
+  "vram_used_bytes": 184027217920,
+  "notes": "Single approximately 1M-token nested narrative request was accepted by vLLM but produced no first token within the bounded five-minute pilot; runner was interrupted to release the GPU. Server remained healthy before abort."
+}

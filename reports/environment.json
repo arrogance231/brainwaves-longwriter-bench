@@ -1,0 +1,75 @@
+{
+  "captured_utc": "2026-08-27T14:51:21Z",
+  "compiler": {
+    "clang": "",
+    "cmake": "cmake version 4.2.3",
+    "gcc": "gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0"
+  },
+  "container_runtime": {
+    "returncode": 0,
+    "stderr": "[aiter] import [module_aiter_core] under /opt/venv/lib/python3.12/site-packages/aiter/jit/module_aiter_core.so",
+    "stdout": "{\"python\": \"3.12.3 (main, Jul 15 2026, 23:46:41) [GCC 13.3.0]\", \"torch\": {\"version\": \"2.12.0+git6bbd260\", \"file\": \"/opt/venv/lib/python3.12/site-packages/torch/__init__.py\"}, \"transformers\": {\"version\": \"5.16.1\", \"file\": \"/opt/venv/lib/python3.12/site-packages/transformers/__init__.py\"}, \"vllm\": {\"version\": \"0.28.0\", \"file\": \"/opt/venv/lib/python3.12/site-packages/vllm/__init__.py\"}, \"sglang\": null, \"aiter\": {\"error\": \"RuntimeError(\\\"Get GPU arch from rocminfo failed: Command '['/opt/rocm-7.2.3/bin/rocminfo']' returned non-zero exit status 1.\\\")\"}, \"huggingface_hub\": {\"version\": \"1.28.0\", \"file\": \"/opt/venv/lib/python3.12/site-packages/huggingface_hub/__init__.py\"}, \"safetensors\": {\"version\": \"0.8.0\", \"file\": \"/opt/venv/lib/python3.12/site-packages/safetensors/__init__.py\"}, \"torch_hip\": \"7.2.53211\"}"
+  },
+  "cpu": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           46 bits physical, 57 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  20\nOn-line CPU(s) list:                     0-19\nVendor ID:                               GenuineIntel\nModel name:                              INTEL(R) XEON(R) PLATINUM 8568Y+\nCPU family:                              6\nModel:                                   207\nThread(s) per core:                      1\nCore(s) per socket:                      20\nSocket(s):                               1\nStepping:                                2\nBogoMIPS:                                4600.00\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm arch_perfmon pebs bts rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq dtes64 vmx ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx_vnni avx512_bf16 wbnoinvd arat vnmi avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b fsrm md_clear serialize tsxldtrk avx512_fp16 arch_capabilities\nVirtualization:                          VT-x\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               640 KiB (20 instances)\nL1i cache:                               640 KiB (20 instances)\nL2 cache:                                80 MiB (20 instances)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-19\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Mitigation; Aligned branch/return thunks\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Not affected\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Mitigation; TSX disabled\nVulnerability Vmscape:                   Not affected"
+  },
+  "docker": {
+    "image": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "[\"vllm-rocm@sha256:ff66df51f80605cd766a4f656e4d32427a554b6002ce0d03e2e6e4738a7dd237\"]"
+    },
+    "running": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "brainwaves-vllm vllm-rocm:0.28.0-gfx942 Up 27 minutes 127.0.0.1:8000->8000/tcp"
+    },
+    "version": {
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "29.7.2"
+    }
+  },
+  "filesystem": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Filesystem     Type  Size  Used Avail Use% Mounted on\n/dev/vda1      ext4  698G  408G  291G  59% /\n/dev/vda1      ext4  698G  408G  291G  59% /"
+  },
+  "gpu": {
+    "returncode": 0,
+    "stderr": "WARNING: AMD GPU device(s) is/are in a low-power state. Check power control/runtime_status\n\nFail to open libdrm_amdgpu.so: libdrm_amdgpu.so: cannot open shared object file: No such file or directory",
+    "stdout": "{\"card0\": {\"VRAM Total Memory (B)\": \"205822885888\", \"VRAM Total Used Memory (B)\": \"182666743808\", \"Card Series\": \"N/A\", \"Card Model\": \"0x74b5\", \"Card Vendor\": \"Advanced Micro Devices, Inc. [AMD/ATI]\", \"Card SKU\": \"M3000100\", \"Subsystem ID\": \"0x74a1\", \"Device Rev\": \"0x00\", \"Node ID\": \"1\", \"GUID\": \"21947\", \"GFX Version\": \"gfx942\"}, \"system\": {\"Driver version\": \"7.0.0-27-generic\"}}"
+  },
+  "host": {
+    "kernel": "7.0.0-27-generic",
+    "python": "3.14.4",
+    "uname": "Linux-7.0.0-27-generic-x86_64-with-glibc2.43"
+  },
+  "memory": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "total        used        free      shared  buff/cache   available\nMem:           235Gi        11Gi       4.1Gi        20Mi       222Gi       224Gi\nSwap:             0B          0B          0B"
+  },
+  "numa": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "available: 1 nodes (0)\nnode 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19\nnode 0 size: 241605 MB\nnode 0 free: 4187 MB\nnode distances:\nnode     0 \n   0:   10"
+  },
+  "pci": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "00:00.0 Host bridge [0600]: Intel Corporation 82G33/G31/P35/P31 Express DRAM Controller [8086:29c0]\n00:01.0 VGA compatible controller [0300]: Red Hat, Inc. Virtio 1.0 GPU [1af4:1050] (rev 01)\n00:02.0 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n00:02.1 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n00:02.2 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n00:02.3 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n00:02.4 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n00:02.5 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n00:02.6 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n00:02.7 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n00:03.0 Host bridge [0600]: Red Hat, Inc. QEMU PCIe Expander bridge [1b36:000b]\n00:1f.0 ISA bridge [0601]: Intel Corporation 82801IB (ICH9) LPC Interface Controller [8086:2918] (rev 02)\n00:1f.2 SATA controller [0106]: Intel Corporation 82801IR/IO/IH (ICH9R/DO/DH) 6 port SATA Controller [AHCI mode] [8086:2922] (rev 02)\n00:1f.3 SMBus [0c05]: Intel Corporation 82801I (ICH9 Family) SMBus Controller [8086:2930] (rev 02)\n01:00.0 Ethernet controller [0200]: Red Hat, Inc. Virtio 1.0 network device [1af4:1041] (rev 01)\n02:00.0 Ethernet controller [0200]: Red Hat, Inc. Virtio 1.0 network device [1af4:1041] (rev 01)\n03:00.0 SCSI storage controller [0100]: Red Hat, Inc. Virtio 1.0 SCSI [1af4:1048] (rev 01)\n04:00.0 USB controller [0c03]: Red Hat, Inc. QEMU XHCI Host Controller [1b36:000d] (rev 01)\n05:00.0 SCSI storage controller [0100]: Red Hat, Inc. Virtio 1.0 block device [1af4:1042] (rev 01)\n06:00.0 SCSI storage controller [0100]: Red Hat, Inc. Virtio 1.0 block device [1af4:1042] (rev 01)\n07:00.0 SCSI storage controller [0100]: Red Hat, Inc. Virtio 1.0 block device [1af4:1042] (rev 01)\n08:00.0 Unclassified device [00ff]: Red Hat, Inc. Virtio 1.0 balloon [1af4:1045] (rev 01)\n80:00.0 PCI bridge [0604]: Red Hat, Inc. QEMU PCIe Root port [1b36:000c]\n81:00.0 PCI bridge [0604]: Texas Instruments XIO3130 PCI Express Switch (Upstream) [104c:8232] (rev 02)\n82:00.0 PCI bridge [0604]: Texas Instruments XIO3130 PCI Express Switch (Downstream) [104c:8233] (rev 01)\n83:00.0 Processing accelerators [1200]: Advanced Micro Devices, Inc. [AMD/ATI] Aqua Vanjaram [Instinct MI300X VF] [1002:74b5]"
+  },
+  "rocminfo": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Name:                    INTEL(R) XEON(R) PLATINUM 8568Y+   \n  Marketing Name:          INTEL(R) XEON(R) PLATINUM 8568Y+   \n  Vendor Name:             CPU                                \n  Name:                    gfx942                             \n  Marketing Name:          AMD Instinct MI300X VF             \n  Vendor Name:             AMD                                \n      Name:                    amdgcn-amd-amdhsa--gfx942:sramecc+:xnack-\n      Name:                    amdgcn-amd-amdhsa--gfx9-4-generic:sramecc+:xnack-"
+  },
+  "storage": {
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "NAME    MODEL   SIZE FSTYPE  MOUNTPOINT ROTA\nvda             720G                       1\n\u251c\u2500vda1        718.9G ext4    /             1\n\u251c\u2500vda13        1023M ext4    /boot         1\n\u251c\u2500vda14           4M                       1\n\u2514\u2500vda15         106M vfat    /boot/efi     1\nvdb             488K iso9660               1\nvdc               5T                       1\n\u2514\u2500vdc1            5T ext4                  1"
+  }
+}

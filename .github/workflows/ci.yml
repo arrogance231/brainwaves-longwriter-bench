@@ -1,0 +1,24 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile Python
+        run: python -m py_compile benchmarks/**/*.py evaluation/*.py performance/*.py scripts/*.py
+      - name: Shell syntax
+        run: bash -n scripts/*.sh serving/**/*.sh
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate deterministic story fixtures
+        run: python benchmarks/arro_longwriter/generate_fixtures.py --validate
+      - name: Regenerate release plots
+        run: python scripts/generate_plots.py

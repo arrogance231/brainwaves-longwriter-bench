@@ -1,0 +1,9 @@
+name: normal-prose
+temperature: 0.80
+top_p: 0.90
+top_k: 20
+min_p: 0.05
+presence_penalty: 1.2
+repetition_penalty: 1.0
+max_tokens: 2048
+thinking: false

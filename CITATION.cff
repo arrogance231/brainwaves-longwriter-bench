@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "Brainwaves MI300X LongWriter Bench"
+message: "Please cite this repository when using its benchmark or reproducibility tooling."
+type: software
+authors:
+  - family-names: "arrogance231"
+    given-names: ""
+    email: "alchemyofjhine@gmail.com"
+repository-code: "https://github.com/arrogance231/brainwaves-longwriter-bench"
+license: Apache-2.0
+version: 0.1.0
+date-released: 2026-08-27

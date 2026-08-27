@@ -1,0 +1,3 @@
+# Optional: the checked-in plot generator is dependency-free SVG; matplotlib is
+# useful for local exploratory figures.
+matplotlib>=3.8

@@ -1,0 +1,4 @@
+runtime: sglang
+recipe_commit: 1cf2b8c54d81802abc15dcf23a29b9cc687bc01e
+image: lmsysorg/sglang:dev-qwen38-27b-dflash2
+note: "Install and validate on ROCm before claiming a benchmark comparison."

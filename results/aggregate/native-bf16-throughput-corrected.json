@@ -1,0 +1,84 @@
+{
+  "runtime": {
+    "base_url": "http://127.0.0.1:8000",
+    "model": "brainwaves-qwen38-27b"
+  },
+  "rows": [
+    {
+      "ok": true,
+      "prompt_tokens": 7277,
+      "completion_tokens": 128,
+      "elapsed_s": 6.725814674002322,
+      "ttft_s": 3.080396990000736,
+      "decode_tok_s": 35.11257449640009,
+      "prefill_tok_s": 2362.35784660933,
+      "usage": {
+        "prompt_tokens": 7277,
+        "total_tokens": 7405,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "context_target_tokens": 8192,
+      "request": 0
+    },
+    {
+      "ok": true,
+      "prompt_tokens": 28947,
+      "completion_tokens": 128,
+      "elapsed_s": 14.342308847000822,
+      "ttft_s": 5.379152997000347,
+      "decode_tok_s": 14.280684408716736,
+      "prefill_tok_s": 5381.330483840509,
+      "usage": {
+        "prompt_tokens": 28947,
+        "total_tokens": 29075,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "context_target_tokens": 32768,
+      "request": 0
+    },
+    {
+      "ok": true,
+      "prompt_tokens": 57849,
+      "completion_tokens": 102,
+      "elapsed_s": 25.846819766000408,
+      "ttft_s": 13.159847287999582,
+      "decode_tok_s": 8.039743144147883,
+      "prefill_tok_s": 4395.871679510467,
+      "usage": {
+        "prompt_tokens": 57849,
+        "total_tokens": 57951,
+        "completion_tokens": 102,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "context_target_tokens": 65536,
+      "request": 0
+    },
+    {
+      "ok": true,
+      "prompt_tokens": 116081,
+      "completion_tokens": 44,
+      "elapsed_s": 56.726930965000065,
+      "ttft_s": 46.581090837000374,
+      "decode_tok_s": 4.336752742493179,
+      "prefill_tok_s": 2492.0197855863507,
+      "usage": {
+        "prompt_tokens": 116081,
+        "total_tokens": 116125,
+        "completion_tokens": 44,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "context_target_tokens": 131072,
+      "request": 0
+    }
+  ]
+}

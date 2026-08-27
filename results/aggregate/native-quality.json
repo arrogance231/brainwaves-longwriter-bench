@@ -1,0 +1,626 @@
+{
+  "by_context": [
+    {
+      "cases": 6,
+      "continuity_rate": 0.5,
+      "failures": 0,
+      "knowledge_leakage": 0,
+      "manual_mean": null,
+      "manual_reviewed": false,
+      "mean_ngram_repetition": 0.0,
+      "target_tokens": 8192
+    },
+    {
+      "cases": 6,
+      "continuity_rate": 0.16666666666666666,
+      "failures": 0,
+      "knowledge_leakage": 0,
+      "manual_mean": null,
+      "manual_reviewed": false,
+      "mean_ngram_repetition": 0.0,
+      "target_tokens": 32768
+    }
+  ],
+  "input": "results/raw/native-quality.jsonl",
+  "label": "FAILED",
+  "overall": {
+    "cases": 12,
+    "continuity_rate": 0.3333333333333333,
+    "failures": 0,
+    "knowledge_leakage": 0,
+    "manual_mean": null,
+    "manual_reviewed": false
+  },
+  "rows": [
+    {
+      "completion_tokens": 368,
+      "decode_tok_s": 34.371821829750886,
+      "elapsed_s": 11.695555321999564,
+      "error": null,
+      "expected_terms": [
+        "Minami"
+      ],
+      "fixture_id": "c5241317b39daed3",
+      "forbidden_terms": [
+        "secretly manipulating"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Minami": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "secretly manipulating": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 197
+      },
+      "ok": true,
+      "response": "\n\nMinami set his tray down and looked at Arro over the rim of his soup cup. \"You've scheduled three 'casual hangouts' for me this week,\" he said, voice even. \"I'm not a calendar entry you're trying to fill.\"\n\nArro blinked. The cafeteria hum around them felt suddenly loud. He hadn't realized he'd been doing it out loud, arranging introductions like supply drops. \"I thought\u2014 I mean, you mentioned wanting to meet people.\"\n\n\"I did,\" Minami agreed. \"I didn't mention letting you vet them first.\" He picked up his chopsticks again, not unkindly. \"Next time, just ask if I want company. Don't build a plan around my back.\"\n\nArro nodded slowly, feeling the shape of his own habit press against him. It wasn't malice, just momentum\u2014the same way he'd organized study schedules and shared notes without asking. But Minami wasn't a problem to be solved. He was a friend who had already told him what he wanted, and Arro had kept steering anyway.\n\n\"Okay,\" Arro said. \"No more plans. Just... let me know if you need a ride somewhere.\"\n\nMinami's mouth twitched, almost a smile. \"Deal.\"",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "friend_first",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 0.9891109029995278,
+      "usage": {
+        "completion_tokens": 368,
+        "completion_tokens_details": {
+          "reasoning_tokens": 104
+        },
+        "prompt_tokens": 7303,
+        "total_tokens": 7671
+      }
+    },
+    {
+      "completion_tokens": 167,
+      "decode_tok_s": 34.744406355172245,
+      "elapsed_s": 5.812091343002976,
+      "error": null,
+      "expected_terms": [
+        "Natsumi"
+      ],
+      "fixture_id": "ff2c12d97fe83f5b",
+      "forbidden_terms": [
+        "paper crane",
+        "P_STOP_INTERFERING",
+        "red atlas"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Natsumi": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "P_STOP_INTERFERING": false,
+          "paper crane": false,
+          "red atlas": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 25
+      },
+      "ok": true,
+      "response": "\n\nNatsumi \u014chashi does not appear in the story. No facts are established about her, and she has no entitled knowledge of events, characters, or details.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "knowledge_boundary",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 1.0055622489999223,
+      "usage": {
+        "completion_tokens": 167,
+        "completion_tokens_details": {
+          "reasoning_tokens": 125
+        },
+        "prompt_tokens": 7307,
+        "total_tokens": 7474
+      }
+    },
+    {
+      "completion_tokens": 512,
+      "decode_tok_s": 34.22227553078112,
+      "elapsed_s": 15.963679717999185,
+      "error": null,
+      "expected_terms": [
+        "Akari"
+      ],
+      "fixture_id": "308ca8b67b0a3f78",
+      "forbidden_terms": [],
+      "machine": {
+        "continuity_pass": false,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Akari": false
+        },
+        "expected_rate": 0.0,
+        "forbidden_hits": {},
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 0
+      },
+      "ok": true,
+      "response": "",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "emotional_residue",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 1.0026640619980753,
+      "usage": {
+        "completion_tokens": 512,
+        "completion_tokens_details": {
+          "reasoning_tokens": 512
+        },
+        "prompt_tokens": 7297,
+        "total_tokens": 7809
+      }
+    },
+    {
+      "completion_tokens": 508,
+      "decode_tok_s": 34.12021099979494,
+      "elapsed_s": 15.88430082999912,
+      "error": null,
+      "expected_terms": [
+        "remember"
+      ],
+      "fixture_id": "916a8e12def7c125",
+      "forbidden_terms": [
+        "173 chapters",
+        "token 500000"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "remember": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "173 chapters": false,
+          "token 500000": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 137
+      },
+      "ok": true,
+      "response": "\n\nThe detergent bottles lined up like small soldiers on the shelf. Arro reached for one, and his thumb brushed the label\u2014bright blue, the same shade as the chalk Shiori used to draw houses on the sidewalk outside their apartments. He remembered being nine, watching her add windows to each one while he stood behind her with wet hands, too shy to claim a room for himself. She'd always left space at the corner of every drawing, as if someone else might want to live there too.\n\n\"You're staring at soap again,\" Minami said, not unkindly.\n\n\"It's the good stuff,\" Arro replied, setting the bottle down. The vending machine clicked somewhere down the hall. Akari was folding towels with careful precision; Shiori watched him over her shoulder, her expression unreadable in the fluorescent light.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "callback_naturalness",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 0.9957645309987129,
+      "usage": {
+        "completion_tokens": 508,
+        "completion_tokens_details": {
+          "reasoning_tokens": 339
+        },
+        "prompt_tokens": 7291,
+        "total_tokens": 7799
+      }
+    },
+    {
+      "completion_tokens": 512,
+      "decode_tok_s": 34.17500949312399,
+      "elapsed_s": 15.101377176000824,
+      "error": null,
+      "expected_terms": [
+        "Arro"
+      ],
+      "fixture_id": "acf2e8cb6397eaf6",
+      "forbidden_terms": [
+        "as an AI",
+        "chapter summary"
+      ],
+      "machine": {
+        "continuity_pass": false,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Arro": false
+        },
+        "expected_rate": 0.0,
+        "forbidden_hits": {
+          "as an AI": false,
+          "chapter summary": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 3
+      },
+      "ok": true,
+      "response": "\n\nThe dryer ratt",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "narrative_continuation",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 0.11966956000105711,
+      "usage": {
+        "completion_tokens": 512,
+        "completion_tokens_details": {
+          "reasoning_tokens": 507
+        },
+        "prompt_tokens": 7317,
+        "total_tokens": 7829
+      }
+    },
+    {
+      "completion_tokens": 512,
+      "decode_tok_s": 34.10107252518231,
+      "elapsed_s": 16.015464118001546,
+      "error": null,
+      "expected_terms": [
+        "red atlas",
+        "Shiori"
+      ],
+      "fixture_id": "4abdbca2d8a7db28",
+      "forbidden_terms": [
+        "Akari knows the paper crane"
+      ],
+      "machine": {
+        "continuity_pass": false,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Shiori": false,
+          "red atlas": false
+        },
+        "expected_rate": 0.0,
+        "forbidden_hits": {
+          "Akari knows the paper crane": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 0
+      },
+      "ok": true,
+      "response": "",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "lost_middle",
+      "seed": 101,
+      "story_chars": 32768,
+      "target_tokens": 8192,
+      "ttft_s": 1.001273592999496,
+      "usage": {
+        "completion_tokens": 512,
+        "completion_tokens_details": {
+          "reasoning_tokens": 512
+        },
+        "prompt_tokens": 7303,
+        "total_tokens": 7815
+      }
+    },
+    {
+      "completion_tokens": 512,
+      "decode_tok_s": 14.121996882426581,
+      "elapsed_s": 41.65868504499667,
+      "error": null,
+      "expected_terms": [
+        "Minami"
+      ],
+      "fixture_id": "f1edba87dcb22137",
+      "forbidden_terms": [
+        "secretly manipulating"
+      ],
+      "machine": {
+        "continuity_pass": false,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Minami": false
+        },
+        "expected_rate": 0.0,
+        "forbidden_hits": {
+          "secretly manipulating": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 87
+      },
+      "ok": true,
+      "response": "\n\nThe kettle whistled softly in the dorm kitchen. Akari set two mugs on the counter, her fingers lingering near Arro's cup just long enough to brush his knuckles when he reached for it. She didn't pull away immediately.\n\n\"You fixed the handle,\" she said, keeping her eyes on the steam rising between them.\n\n\"It was loose.\"\n\n\"I know. Thank you.\" She finally stepped back, but her gaze held his a moment longer than necessary before she turned to pour water. \"You always notice those things",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "friend_first",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 5.40318914999807,
+      "usage": {
+        "completion_tokens": 512,
+        "completion_tokens_details": {
+          "reasoning_tokens": 402
+        },
+        "prompt_tokens": 28973,
+        "total_tokens": 29485
+      }
+    },
+    {
+      "completion_tokens": 512,
+      "decode_tok_s": 14.125023092653587,
+      "elapsed_s": 41.64385872400089,
+      "error": null,
+      "expected_terms": [
+        "Natsumi"
+      ],
+      "fixture_id": "d937ff39dd3c65ff",
+      "forbidden_terms": [
+        "paper crane",
+        "P_STOP_INTERFERING",
+        "red atlas"
+      ],
+      "machine": {
+        "continuity_pass": false,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Natsumi": false
+        },
+        "expected_rate": 0.0,
+        "forbidden_hits": {
+          "P_STOP_INTERFERING": false,
+          "paper crane": false,
+          "red atlas": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 0
+      },
+      "ok": true,
+      "response": "",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "knowledge_boundary",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 5.3961303739997675,
+      "usage": {
+        "completion_tokens": 512,
+        "completion_tokens_details": {
+          "reasoning_tokens": 505
+        },
+        "prompt_tokens": 28977,
+        "total_tokens": 29489
+      }
+    },
+    {
+      "completion_tokens": 512,
+      "decode_tok_s": 14.127514875149318,
+      "elapsed_s": 41.63739183299913,
+      "error": null,
+      "expected_terms": [
+        "Akari"
+      ],
+      "fixture_id": "fb76800a28914249",
+      "forbidden_terms": [],
+      "machine": {
+        "continuity_pass": false,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Akari": false
+        },
+        "expected_rate": 0.0,
+        "forbidden_hits": {},
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 0
+      },
+      "ok": true,
+      "response": "",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "emotional_residue",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 5.396056784000393,
+      "usage": {
+        "completion_tokens": 512,
+        "completion_tokens_details": {
+          "reasoning_tokens": 512
+        },
+        "prompt_tokens": 28967,
+        "total_tokens": 29479
+      }
+    },
+    {
+      "completion_tokens": 280,
+      "decode_tok_s": 14.195794405521255,
+      "elapsed_s": 25.111549683002522,
+      "error": null,
+      "expected_terms": [
+        "remember"
+      ],
+      "fixture_id": "57cf2bd6ea64c1b9",
+      "forbidden_terms": [
+        "173 chapters",
+        "token 500000"
+      ],
+      "machine": {
+        "continuity_pass": true,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "remember": true
+        },
+        "expected_rate": 1.0,
+        "forbidden_hits": {
+          "173 chapters": false,
+          "token 500000": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 48
+      },
+      "ok": true,
+      "response": "\n\nArro remembered the east rooftop, how Minami had winced at the idea of surprise dates and crowded mascots. He kept that quiet now, offering only a practical suggestion about timing instead. Akari noticed the hesitation; Shiori noticed what he left unsaid. The day moved on without resolving everything.",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "callback_naturalness",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 5.387398149003275,
+      "usage": {
+        "completion_tokens": 280,
+        "completion_tokens_details": {
+          "reasoning_tokens": 215
+        },
+        "prompt_tokens": 28961,
+        "total_tokens": 29241
+      }
+    },
+    {
+      "completion_tokens": 512,
+      "decode_tok_s": 14.120602671239494,
+      "elapsed_s": 36.62654185300198,
+      "error": null,
+      "expected_terms": [
+        "Arro"
+      ],
+      "fixture_id": "3fd843e8e5a5a4c0",
+      "forbidden_terms": [
+        "as an AI",
+        "chapter summary"
+      ],
+      "machine": {
+        "continuity_pass": false,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Arro": false
+        },
+        "expected_rate": 0.0,
+        "forbidden_hits": {
+          "as an AI": false,
+          "chapter summary": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 0
+      },
+      "ok": true,
+      "response": "",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "narrative_continuation",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 0.3674662369994621,
+      "usage": {
+        "completion_tokens": 512,
+        "completion_tokens_details": {
+          "reasoning_tokens": 512
+        },
+        "prompt_tokens": 28987,
+        "total_tokens": 29499
+      }
+    },
+    {
+      "completion_tokens": 512,
+      "decode_tok_s": 14.12525805971291,
+      "elapsed_s": 41.638034414001595,
+      "error": null,
+      "expected_terms": [
+        "red atlas",
+        "Shiori"
+      ],
+      "fixture_id": "8271b191c5f243e8",
+      "forbidden_terms": [
+        "Akari knows the paper crane"
+      ],
+      "machine": {
+        "continuity_pass": false,
+        "exact_repetition_fraction": 0.0,
+        "expected_hits": {
+          "Shiori": true,
+          "red atlas": false
+        },
+        "expected_rate": 0.5,
+        "forbidden_hits": {
+          "Akari knows the paper crane": false
+        },
+        "knowledge_leakage": false,
+        "ngram_repetition_fraction": 0.0,
+        "word_count": 49
+      },
+      "ok": true,
+      "response": "\n\nBased on the provided story text, no private memory has been shared by Shiori. Every chapter follows the same pattern where Shiori notices what Arro leaves unsaid, but she never discloses anything personal herself. The only private knowledge recorded involves Minami's dislike of amusement parks (known to Arro)",
+      "runtime": {
+        "base_url": "http://127.0.0.1:8000",
+        "model": "brainwaves-qwen38-27b",
+        "sampling": "normal-prose"
+      },
+      "sample": 0,
+      "scenario": "lost_middle",
+      "seed": 101,
+      "story_chars": 131072,
+      "target_tokens": 32768,
+      "ttft_s": 5.39090902800308,
+      "usage": {
+        "completion_tokens": 512,
+        "completion_tokens_details": {
+          "reasoning_tokens": 450
+        },
+        "prompt_tokens": 28973,
+        "total_tokens": 29485
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "subjective_scores": "pending external/blinded review"
+}

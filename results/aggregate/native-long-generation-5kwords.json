@@ -1,0 +1,17 @@
+{
+  "context_target_tokens": 8192,
+  "prompt_tokens": 7307,
+  "completion_tokens": 2533,
+  "word_count": 1839,
+  "elapsed_s": 79.54046776799805,
+  "ttft_s": 0.09972581999682006,
+  "decode_tok_s": 31.88540209830872,
+  "usage": {
+    "prompt_tokens": 7307,
+    "total_tokens": 9840,
+    "completion_tokens": 2533,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

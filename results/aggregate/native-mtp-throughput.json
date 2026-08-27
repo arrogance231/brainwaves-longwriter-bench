@@ -1,0 +1,27 @@
+{
+  "runtime": {
+    "base_url": "http://127.0.0.1:8000",
+    "model": "brainwaves-qwen38-27b"
+  },
+  "rows": [
+    {
+      "ok": true,
+      "prompt_tokens": 7277,
+      "completion_tokens": 256,
+      "elapsed_s": 6.645469518000027,
+      "ttft_s": 1.0276440300003742,
+      "decode_tok_s": 45.56923324635957,
+      "prefill_tok_s": 7081.245827893683,
+      "usage": {
+        "prompt_tokens": 7277,
+        "total_tokens": 7533,
+        "completion_tokens": 256,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "context_target_tokens": 8192,
+      "request": 0
+    }
+  ]
+}
