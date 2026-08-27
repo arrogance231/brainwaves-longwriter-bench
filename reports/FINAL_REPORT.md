@@ -71,9 +71,10 @@ non-stream response does not expose a reliable decode timestamp.
   8K 35.11 vs 35.13 decode tok/s, and 32K 14.28 vs 14.29. Keep AITER enabled
   for the tested image, but do not claim a speedup. The image logged a ROCm
   compiler-option warning and used fallbacks for some kernels.
-* Native MTP (`num_speculative_tokens=2`) reached 45.57 decode tok/s versus
-  34.18 tok/s in the comparable short FP8 normal-decode probe, with 156/334
-  draft tokens accepted (46.7%). It is experimental on AMD; vLLM rejects
+* Native MTP (`num_speculative_tokens=2`) reached 45.57 decode tok/s in its
+  short 8K probe versus 35.11 tok/s in the corrected BF16 normal-decode probe
+  (different output lengths, so treat this as directional). It accepted
+  156/334 draft tokens (46.7%). MTP is experimental on AMD; vLLM rejects
   `min_p` with this path and a longer quality comparison is still required.
 * Automatic prefix caching is enabled. A repeated 32K prompt measured 9.61 s
   cold versus 3.47 s warm in the captured run; vLLM metrics exposed cache-hit
